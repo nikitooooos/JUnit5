@@ -1,4 +1,5 @@
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
 
@@ -17,6 +18,7 @@ public class fruitDeliveryTest extends TestBase {
             "Контакты,Контакты/Реквизиты",
     })
     @ParameterizedTest(name="Надпись {1} верно отображается для категории {0}")
+    @Tag("Buttons")
     void labirintButtonsCheck(String category, String buttons){
         $(".header__menu").$(byText(category)).click();
         $("#page__title").shouldHave(text(buttons));
