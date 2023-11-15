@@ -1,19 +1,18 @@
 TEST-DATA [
-    [Рус  'НОВОСТИ, ОБ ИГРЕ, МЕДИА, МЕРЧ, РЕЙТИНГ, СТРИМЕР ЧЕЛЛЕНДЖ, ФОРУМ, ПОДДЕРЖКА, ВИКИ'],
-    [Eng, 'NEWS, ABOUT, MEDIA, MERCH, RATINGS, STREAMER CHALLENGE, FORUM, SUPPORT, WIKI'],
-    [De,  'NEWS, ÜBER, MEDIEN, MERCH, RATINGS, STREAMERCHALLENGE, FORUM, SUPPORT, WIKI'],
-    [Esp, 'NOTICIAS, JUEGO, MEDIA, MERCH, CLASIFICACIONES, DESAFÍO STREAMER, FORO, SOPORTE, WIKI"],
-    [Por, 'NOTÍCIAS, JOGO, MIDIA, MERCH, AVALIAÇÕES, STREAMER CHALLENGE, FORUM, SUPORTE, WIKI'],
-    [Fra, 'ACTUALITÉS, À PROPOS, MÉDIAS, MERCH, CLASSEMENTS, STREAMER CHALLENGE, FORUM, ASSISTANCE, WIKI'],
-    [中文, '新闻动态, 关于游戏, 媒体资讯, 纪念品, 排行榜, 主播挑战赛, 论坛, 支持, 百科'],
-    [Ita, 'NOVITÀ, ABOUT, MEDIA, MERCH, VALUTAZIONE, SFIDA DEGLI STREAMER, FORUM, SUPPORTO, WIKI'],
-    [Jp,  'NEWS, ABOUT, MEDIA", MERCH, RATINGS, ストリーマーチャレンジ, FORUM, SUPPORT, WIKI']
+    [RU  'Новости', 'Поддержка', 'Мерч', 'Рейтинг'],
+    [EN , 'News', 'Support', 'Merch', 'Rating'],
+    [DE,  'News', 'Support', 'Merch', 'Ratings'],
+    [CH, '新闻', '支持', '周边', '排位'],
+    [IT, 'Novità', 'Supporto', 'Merce', Valutazione'],
+    [PL, 'Aktualności', 'Wsparcie', 'Sklep', 'Ocena'],
+    [TR, 'Haberler', 'Destek', 'Merch', 'Değerlendirme'],
+    [ES, 'Noticias', 'Soporte', 'Merch', 'Clasificación'],
 ]
 0) Повторить для всех наборов TEST-DATA
 1) ЗАГОЛОВОК: "Проверка отображения кнопок TEST-DATA[1] для языка TEST-DATA[0] "
 2) ПРЕДУСЛОВИЯ*
  - Открыт браузер
- - Открыт сайт https://www.escapefromtarkov.com/
+ - Открыт сайт https://arena.tarkov.com
 3) ПРИОРИТЕТ / КРИТИЧНОСТЬ BLOCKER
 4) ШАГИ
  - В верхней части экрана найти выпадающий список с представленными языками и нажать на него

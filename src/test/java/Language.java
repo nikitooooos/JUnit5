@@ -1,3 +1,3 @@
 public enum Language {
-    Русский, English, Deutsch, Italiano, 中文, Polski, Türkçe, Español
+    EN, RU, DE, CN, IT, PL, TR, ES
 }
