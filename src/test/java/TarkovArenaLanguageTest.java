@@ -12,7 +12,7 @@ import static com.codeborne.selenide.CollectionCondition.texts;
 import static com.codeborne.selenide.Condition.*;
 import static com.codeborne.selenide.Selenide.*;
 
-public class tarkovArenaLanguageTest extends TestBase {
+public class TarkovArenaLanguageTest extends TestBase {
 
     static Stream<Arguments> tarkovArenaButtonsTest() {
         return Stream.of(
@@ -32,7 +32,7 @@ public class tarkovArenaLanguageTest extends TestBase {
         open("https://arena.tarkov.com");
     }
 
-    @MethodSource
+    @MethodSource("tarkovArenaButtonsTest")
     @ParameterizedTest(name = "Проверка отображения кнопок")
     @Tags({@Tag("WEB"), @Tag("SMOKE")})
     void tarkovArenaButtonsTest(Language language, List<String> expectedButtons) {

@@ -7,7 +7,7 @@ import static com.codeborne.selenide.Condition.*;
 import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.*;
 
-public class fruitDeliveryTest extends TestBase {
+public class FruitDeliveryTest extends TestBase {
     @BeforeEach
     void openSite(){
         open("https://www.fruktinadom.ru/");
@@ -19,7 +19,7 @@ public class fruitDeliveryTest extends TestBase {
     })
     @ParameterizedTest(name="Надпись {1} верно отображается для категории {0}")
     @Tag("Buttons")
-    void labirintButtonsCheck(String category, String buttons){
+    void fruitButtonsCheck(String category, String buttons){
         $(".header__menu").$(byText(category)).click();
         $("#page__title").shouldHave(text(buttons));
     }
